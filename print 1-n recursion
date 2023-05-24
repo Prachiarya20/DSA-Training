@@ -1,0 +1,15 @@
+#include <iostream>
+
+void printNumbers(int n) {
+    if (n >= 1) {
+        printNumbers(n - 1);  // Recursive call
+        std::cout << n << " ";
+    }
+}
+
+int main() {
+    int n = 10;
+    printNumbers(n);
+
+    return 0;
+}
